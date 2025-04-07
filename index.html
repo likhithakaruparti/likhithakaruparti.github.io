@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likhitha Karuparti | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h1 class="logo">Likhitha</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="closeSidebar()">Home</a></li>
+        <li><a href="#about" onclick="closeSidebar()">About</a></li>
+        <li><a href="#skills" onclick="closeSidebar()">Skills</a></li>
+        <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
+        <li><a href="#resume" onclick="closeSidebar()">Resume</a></li>
+        <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <!-- Home -->
+  <section id="home" class="section home">
+    <h2>Hi, I’m <span class="highlight">Likhitha Karuparti</span></h2>
+    <p>A Computer Science & AIML student building smart, impactful tech solutions with creativity.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>👋 I’m a 3rd-year CSE (AIML) student who’s passionate about learning, building, and creating.</p>
+    <p>💡 I love coding smart solutions, and I’m equally into art, dance, and anything creative.</p>
+    <p>🌱 Constantly improving my skills and aiming for a bright future in tech!</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+        </ul>
+      </div>
+  
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Full Stack Development</li>
+        </ul>
+      </div>
+  
+      <div class="skill-card">
+        <h3>AI & Machine Learning</h3>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Artificial Intelligence</li>
+          <li>RAG-based Systems</li>
+        </ul>
+      </div>
+  
+      <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Git (basic)</li>
+          <li>Google Colab / Jupyter</li>
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+      <img src="iq.png" alt="IQ Wizard" class="project-img">
+      <div class="project-content">
+        <h3>IQ Wizard</h3>
+        <p class="project-tagline">Adaptive quiz platform for logic testing.</p>
+        <small class="click-hint">Click to learn more</small>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <img src="pie.png" alt="PDF Info Extractor" class="project-img">
+      <div class="project-content">
+        <h3>PIE (PDF Info Extractor)</h3>
+        <p class="project-tagline">Contextual PDF extraction using RAG.</p>
+        <small class="click-hint">Click to learn more</small>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <img src="tax.jpg" alt="Smart Tax Calculator" class="project-img">
+      <div class="project-content">
+        <h3>Smart Tax Calculator</h3>
+        <p class="project-tagline">AI-powered tax planning tool.</p>
+        <small class="click-hint">Click to learn more</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription">Project full description goes here...</p>
+    </div>
+  </div>
+
+  <!-- Resume -->
+  <section id="resume" class="section resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below:</p>
+    <a href="Likhitha Karuparti.pdf" class="resume-btn" target="_blank">View Resume</a>
+  </section>
+
+  <!-- Contact -->
+<!-- Font Awesome (Add in <head> if not already included) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" style="background-color: #1e2a38;">
+      <h2 style="color: #00bcd4;">Contact</h2>
+      <p style="color: #f0f0f0;">If you'd like to connect with me, feel free to drop a message or reach out on LinkedIn or GitHub.</p>
+      <br/>
+      <div class="contact-links" style="line-height: 1.8;">
+        <a href="mailto:likhithakaruparti@gmail.com" style="color: #ffffff; text-decoration: none;">
+          <i class="fas fa-envelope"></i> likhithakaruparti@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/likhitha-karuparti-0443b9335/" target="_blank" style="color: #ffffff; text-decoration: none;">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/likhithakaruparti" target="_blank" style="color: #ffffff; text-decoration: none;">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+    
+
+  <!-- JS Scripts -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+      document.body.classList.toggle('sidebar-open');
+    }
+
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.body.classList.remove('sidebar-open');
+    }
+
+    // Scroll Fade-in
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+
+    // Project Popup
+    const modal = document.getElementById('projectModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.querySelector('.close');
+
+    const projectDetails = {
+      "IQ Wizard": "IQ Wizard is an intelligent quiz platform that analyzes users’ responses and tracks improvement over time. Built with a focus on logic-based questions and adaptive difficulty. Technologies: HTML, CSS, JavaScript, Python.",
+      "PIE (PDF Info Extractor)": "PIE uses Retrieval-Augmented Generation (RAG) to extract and summarize data from PDFs using LangChain and OpenAI API. Ideal for quick, contextual data access.",
+      "Smart Tax Calculator": "AI-based tax calculator in progress. Offers real-time tax computation, personalized saving suggestions, and integrates educational financial tools. Built using Python and frontend stack."
+    };
+
+    document.querySelectorAll('.project-box').forEach(box => {
+      box.addEventListener('click', () => {
+        const title = box.querySelector('h3').textContent;
+        modalTitle.textContent = title;
+        modalDescription.textContent = projectDetails[title] || "More details coming soon!";
+        modal.style.display = "flex";
+      });
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+    window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+  </script>
+
+</body>
+</html>
